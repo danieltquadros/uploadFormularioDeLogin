@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.area{
+    background-color: #c0c0c0;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+.logo{
+    width: 75%;
+    height: auto;
+}
+.remember{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.gray{
+    color: #999999;
+}
+.padding{
+    padding-top: 8px;
+}

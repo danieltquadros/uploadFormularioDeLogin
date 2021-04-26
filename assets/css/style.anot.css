@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: flex;, justify-content: center; e align-items: center; - Fazem com que todo o conteúdo do body fique no meio da tela no sentido horizontal.*/
+    min-height: 100vh;
+    /* min-height: 100vh; - Faz com que todo o conteúdo do body fique no meio da tela no sentido vertical.
+    Obs.: Porque a utilização do min? Para evitar que, se por acaso, a altura do monitor do usuário seja menor que o nosso conteúdo (div class="area") o site seja quebrado. Neste caso, apareceria uma scrollbar.
+    - min - Este parâmetro indica mínimo, neste caso, altura mínima.
+    - O 100vh significa o 100% da tela do usuário*/
+    
+}
+h1{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.area{
+    background-color: #c0c0c0;
+    width: 100%;
+    max-width: 350px;
+    /* width e max-width - Utilizamos aqui a combinação destes dois comandos para tornar oa nossa div responsiva. O width: 100%; faz com que a largura da diz em um dispositivo com tela pequena não ultrappasse a largura da tela, evitando assim o aparecimento de uma scrollbar horizontal. O max-width: 330px; utilizamos aqui para que em telas grandes, a largura da nossa div, não toma conta de toda a tela, mas se limite o seu tamanho máximo em 330px.*/
+    /* Não precisamos de uma altura, pois a altura dependerá do conteúdo que será inserido*/
+    text-align: center;/* Deixa o conteúdo de toda a area centralizado*/
+    padding: 10px;/* Aqui utilizamos esse padding para que em telas menores, a nossa area não fique colada nos extremos da tela, desta maneira, temos um distanciamento de 10px entre a area e o canto da tela*/
+}
+.logo{
+    width: 75%;
+    /*width: 100%;
+     aqui o width: 100%; não permite que a imagem ultrapasse o limite a tela ou da tag onde ela está inserida, neste caso, a div.*/
+    height: auto;
+    /* utilizamos height: auto; para que não haja distorção no redimencionamento desta imagem, quando houver variações do tamanho de telas.*/
+}
+.remember{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.gray{
+    color: #999999;
+}
+.padding{
+    padding-top: 8px;
+}
